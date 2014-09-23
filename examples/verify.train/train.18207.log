@@ -1,0 +1,428 @@
+I am  0
+$JOB_ID 9383 4
+$JOB_ID bcast 9383 4
+param: trainfile.18207 validfile.18207 output
+num_states: 272
+num_label: 16
+num_params: 34548
+num_gates: 79
+num_ps_gates: 21
+num_pi_gates: 58
+window_size: 15
+dim_features: 1201
+dim_one_pos: 79
+num_params = 34548
+Training data8 loaded
+0 8
+some training data
+15 0.1 0.2143
+7 0.359 0.4286
+Initialization Finished!
+num_data = 8
+num_tst = 8
+[TRAIN]begin lbfgs
+ComputeFunction (10135.2) 1 seconds.
+Norm of Gradient: 2651.42
+ComputeGradient 1 seconds.
+LineSearch 1 seconds.
+
+Iteration:  1
+ Weight Norm: 3.0349
+ Objective: 2051.56
+ test ACC(Viterbi): 0.720721   240/333
+output/model.p0-1.9383
+ test ACC(MAP1): 0.720721   240/333
+ test ACC(MAP1-L8to3): 0.720721   240/333
+ train ACC: 0.720721   240/333
+STEP SIX: Check termination conditions 3 seconds.
+Norm of Gradient: 1386.92
+ComputeGradient 1 seconds.
+LineSearch 1 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 646.835
+ComputeGradient 1 seconds.
+LineSearch 1 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 264.218
+ComputeGradient 2 seconds.
+LineSearch 0 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 185.73
+ComputeGradient 1 seconds.
+LineSearch 1 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 62.4485
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 3 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 3 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 3 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+Restart: Too many consecutive small steps
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 3 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 3 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 3 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 3 seconds.
+Restart: Too many consecutive small steps
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 3 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 3 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 3 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+Restart: Too many consecutive small steps
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 3 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 3 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 3 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 3 seconds.
+Restart: Too many consecutive small steps
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 3 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 3 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 3 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 3 seconds.
+Restart: Too many consecutive small steps
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 3 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 3 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 3 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+Restart: Too many consecutive small steps
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 3 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 3 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 3 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 3 seconds.
+Restart: Too many consecutive small steps
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 3 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 3 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 3 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+Restart: Too many consecutive small steps
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 3 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 3 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 3 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 2 seconds.
+LineSearch 3 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 3 seconds.
+Restart: Too many consecutive small steps
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.
+LineSearch 4 seconds.
+STEP SIX: Check termination conditions 0 seconds.
+Norm of Gradient: 50.7785
+ComputeGradient 1 seconds.

@@ -1,0 +1,150 @@
+	RaptorX-ss3-ss8 with source codes
+﻿1. Overview
+
+RaptorX-SS8 is a software package that predicts both 3-class and 8-class protein
+secondary structure using a probabilistic graphical model Conditional Neural Fields 
+(CNFs). This package takes as input PSSM (position specific score matrix) generated 
+by PSIBLAST, the physico-chemical properties of amino acids and their statistical 
+properties to predict secondary structure. For each position of a given protein, 
+RaptorX-SS8 outputs the probability of this position belonging to each of the three 
+or eight secondary structure types. The type with the highest probability is used as 
+the predicted type. The technical detail of this software is described in the following 
+paper.
+
+Zhiyong Wang, Feng Zhao, Jian Peng, and Jinbo Xu. Protein 8-class Secondary Structure 
+Prediction Using Conditional Neural Fields, Proceedings of IEEE BIBM 2010, Dec 2010, Hong Kong.
+
+This software has been compiled and tested on a Ubuntu 9.04 Linux server (kernel 2.6.28-
+19-server) with Quad-Core AMD Opteron(tm) Processors.
+
+Version ID: $Rev: 46986 $. Please let us know the version ID when reporting any problems.
+
+2. Installation
+
+Before installation, please make sure that Perl v5.10.0 is properly installed on your 
+computer systems. To install the package, first create a new folder and uncompress all 
+the files in the package to the folder and then run setup.pl to setup RaptorX-SS8 as follows.
+
+>perl ./setup.pl -home [the full path of this folder] -blast [the full-path executable file 
+for the Psiblast program, usually psiblast or blastpgp] -nr [the full-path file of the 
+non-redundent (NR) database (no suffix)]
+
+For example, in the case that the NR database, including files nr.00.phr, nr.00.pin, 
+nr.00.psq ... nr.03.psq, is kept in the folder /home/bob/db/nr/ ,
+
+>perl ./setup.pl -home /home/bob/raptorxss8 -blast /usr/bin/psiblast -nr /home/bob/db/nr/nr
+
+3. Run a Self-test 
+
+We provide a script, bin/selftest.pl, to test whether the software is correctly installed and 
+all parameters are correctly configured. You can run this script in the home directory of RaptorX-SS8. 
+
+>bin/selftest.pl
+
+It will run predictions for 10 benchmark protein sequences and then compare the prediction 
+results with those in the directory example/verify, which are generated with correct software 
+installation and configuration. The comparison result will be shown in terms of PSSM matrix 
+difference, 3-class prediction difference and 8-class prediction difference.
+
+Difference of PSSM matrices = Frobenius-norm ( A - B ) where A is the PSSM computed from your
+current installation and B is the PSSM from the correct installation.
+
+3-class prediction difference = n3 / N . n3 is the number of positions for which your 3-class 
+secondary structure predictions are different from the predictions in example/verify. N is the 
+sequence length.
+
+8-class prediction difference = n8 / N . n8 is the number of positions for which your 8-class 
+secondary structure predictions are different from the predictions in example/verify. N is the 
+sequence length.
+
+Because you may use a different version of BLAST and the protein NR database, the difference 
+may not necessarily be zero. However, your installation and configuration is correct as long as 
+the difference is not very large. Otherwise you may have to double check your installation.
+
+4. Run RaptorX-SS8
+
+a) Eight-class secondary structure prediction:
+
+To predict 8-class secondary structure for a protein sequence in 1azz.seq, you can use the 
+following command.
+
+>./bin/run_raptorx-ss8.pl examples/1aaz.seq
+
+RaptorX-SS8 will generate a single result file 1aaz.ss8 in current directory.
+
+b) Three-class secondary structure prediction:
+
+To predict 3-class secondary structure for a protein sequence, you can use the following command.
+
+>./bin/run_raptorx-ss3.pl examples/1aaz.seq
+
+RaptorX-SS8 will produce two result files 1aaz.ss3 and 1aaz.horiz in current directory.
+
+5. File Formats
+
+The input file can be in a FASTA-formatted file or a plain text file. The amino acid type 
+'X' is allowable in the input file. See examples/1aaz.seq and examples/T0643.seq for two 
+example input files.
+
+The ".ss8" file contains two comment lines starting with "#" followed by prediction results. 
+The results are formatted as a table with 11 columns and as many rows as the length of the 
+protein sequence. Each row corresponds to one residue in the sequence. The first column is 
+the residue index number. The 2nd and 3rd columns are the amino acid type of the residue and 
+the predicted secondary structure type, respectively. The 4th-11th columns are the eight 
+probability values for the 8 secondary structure types in the order of H, G, I, E, B, T, S and C.
+
+Similar to the ".ss8" file, the ".ss3" file contains the 3-class prediction result. The ".ss3" 
+file has a very similar format as the ".ss2" file generated by PSIPRED. The prediction result 
+is formatted as a table with 6 columns and as many rows as the length of the sequence. Each row 
+corresponds to one residue in the sequence. The 1st column is the residue index number. The 2nd 
+and 3rd columns are the amino acid type of the residue and the predicted secondary structure type, 
+respectively. The 4th-6th columns are the three probability values for the 3 secondary structure 
+types in the order of H(alpha-helix), E(beta-strand) and C(loop).
+
+The ".horiz" file has a similar format as the ".horiz" file generated by PSIPRED, which contains 
+a confidence value, the predicted secondary structure type and amino acid type for each residue 
+in the protein.  
+
+6. Compile from source codes
+
+To compile a training program, you need the MPI library to compile it using the following command. 
+mpiCC from the MPI library is required for parallel training.
+
+> cd src/
+> make train
+
+To compile the predicting program without MPI, you can use the following commands.
+
+> cd src/
+> make predict
+
+7 Training the model
+
+7.1 Prepare the training dataset
+
+The training dataset can be generated by the following commands.
+> bin/generate_training.pl [PDB id list] [training file]
+The PDB file list is a file containing one PDB id in each line. The result file is [training file] 
+in the current folder. For each PDB id, the script need [PDB id].dssp [PDB id].pssm and [PDB id].seq in the current
+folder. [PDB id].dssp file is generated by DSSP program. For each DSSP file, no missing amino acid is allowed.
+
+7.2 Run the following command for training
+
+mpirun [MPI parameters] bin/bcnf_mpitp CONF data/CNF.ax.train.conf TRAIN [training data file] &> train.log
+The output information is in the train.log.
+
+7. Trouble shooting
+
+7.1 Blast+:
+
+If you are using blast+, please replace the line 62 in bin/run_raptorx-ss8.pl by
+
+$tmp=`[the home folder of ncbi-blast+]/bin/psiblast -db $NR -query  $FNTMPSEQ -num_iterations 5 -out_ascii_pssm  $FNTMPPSSM`;
+
+And please also replace the line 58 in bin/run_raptorx-ss3.pl by
+
+$tmp=`[the home folder of ncbi-blast+]/bin/psiblast -db $NR -query  $FNTMPSEQ -num_iterations 5 -out_ascii_pssm  $FNTMPPSSM`;
+
+[the home folder of ncbi-blast+] is the home folder where your blast+ is installed.
+
+7. Contact: Zhiyong Wang (zywang@ttic.edu) and Jinbo Xu (jinboxu@gmail.com) 

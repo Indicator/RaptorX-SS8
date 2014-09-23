@@ -1,0 +1,33 @@
+I am  0
+$JOB_ID 9383 4
+$JOB_ID bcast 9383 4
+param: trainfile.17217 validfile.17217 output
+num_states: 272
+num_label: 16
+num_params: 34548
+num_gates: 79
+num_ps_gates: 21
+num_pi_gates: 58
+window_size: 15
+dim_features: 1201
+dim_one_pos: 79
+num_params = 34548
+Training data8 loaded
+0 52
+some training data
+15 0.1 0.2143
+7 0.359 0.4286
+Initialization Finished!
+num_data = 8
+num_tst = 52
+[TRAIN]begin lbfgs
+ComputeFunction (10114.3) 1 seconds.
+Norm of Gradient: 2653.86
+ComputeGradient 1 seconds.
+LineSearch 2 seconds.
+
+Iteration:  1
+ Weight Norm: 3.0616
+ Objective: 2074.55
+ test ACC(Viterbi): 0.996703   1814/1820
+output/model.p0-1.9383

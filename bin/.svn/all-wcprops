@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/45053/zywang/Release/raptorx-ss8-src/bin
+END
+GenFeat.train.pl
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/45053/zywang/Release/raptorx-ss8-src/bin/GenFeat.train.pl
+END
+generate_training.pl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/46985/zywang/Release/raptorx-ss8-src/bin/generate_training.pl
+END
+bcnf_mpitp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/45053/zywang/Release/raptorx-ss8-src/bin/bcnf_mpitp
+END
+run_raptorx-ss3.pl
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/45053/zywang/Release/raptorx-ss8-src/bin/run_raptorx-ss3.pl
+END
+selftest.pl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/45053/zywang/Release/raptorx-ss8-src/bin/selftest.pl
+END
+run-train.sh
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/45064/zywang/Release/raptorx-ss8-src/bin/run-train.sh
+END
+run_raptorx-ss8.pl
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/46985/zywang/Release/raptorx-ss8-src/bin/run_raptorx-ss8.pl
+END
+GenFeat_nodssp.pl
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/45053/zywang/Release/raptorx-ss8-src/bin/GenFeat_nodssp.pl
+END
+mktemp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/45053/zywang/Release/raptorx-ss8-src/bin/mktemp
+END
+bcnf_mpitp.train
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/46985/zywang/Release/raptorx-ss8-src/bin/bcnf_mpitp.train
+END
+BioDSSP.pm
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/45053/zywang/Release/raptorx-ss8-src/bin/BioDSSP.pm
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/45054/zywang/Release/raptorx-ss8-src/src
+END
+Score.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/45055/zywang/Release/raptorx-ss8-src/src/Score.h
+END
+bCNF_mpi_tp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/45064/zywang/Release/raptorx-ss8-src/src/bCNF_mpi_tp.cpp
+END
+ScoreMatrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/45055/zywang/Release/raptorx-ss8-src/src/ScoreMatrix.h
+END
+bCNF_mpi_tp.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/45055/zywang/Release/raptorx-ss8-src/src/bCNF_mpi_tp.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/45055/zywang/Release/raptorx-ss8-src/src/Makefile
+END
+bCNF.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/45055/zywang/Release/raptorx-ss8-src/src/bCNF.h
+END
